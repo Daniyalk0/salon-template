@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence, PanInfo } from "framer-motion";
+import { motion, AnimatePresence, PanInfo } from "motion/react";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 // --- MOCK DATA ---
