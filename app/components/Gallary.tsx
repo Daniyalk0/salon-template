@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { Sparkles, Clock, User, Award, Heart, ShieldCheck, Star } from 'lucide-react';
 
 // --- Data Structure ---
