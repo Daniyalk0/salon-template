@@ -93,7 +93,7 @@ const itemVariants = {
 
 export default function ServicesGallery() {
   return (
-    <section className="relative py-20 bg-[#0A0A0A] text-white overflow-hidden">
+    <section className="relative md:py-20 bg-[#0A0A0A] text-white overflow-hidden">
       
       {/* Background Subtle Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">

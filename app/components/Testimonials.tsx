@@ -105,7 +105,7 @@ export default function DarkTestimonials() {
   };
 
   return (
-    <section className="relative py-24 lg:py-32 bg-[#0A0A0A] overflow-hidden selection:bg-[#C8A97E]/30">
+    <section className="relative py-16 lg:py-32 bg-[#0A0A0A] overflow-hidden selection:bg-[#C8A97E]/30">
       
       {/* Background Ambience */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-[#C8A97E]/5 rounded-full blur-[120px] pointer-events-none" />
@@ -202,7 +202,7 @@ export default function DarkTestimonials() {
                     </div>
 
                     {/* Review Text */}
-                    <p className="text-xl md:text-2xl font-light text-stone-200 leading-relaxed mb-8 max-w-3xl">
+                    <p className="text-md md:text-2xl font-light text-stone-200 leading-relaxed mb-8 max-w-3xl">
                       "{REVIEWS[index].text}"
                     </p>
 

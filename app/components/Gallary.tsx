@@ -211,12 +211,12 @@ export default function TransformationsSection() {
         </div>
 
         {/* Luxury Trust Statistics Row */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="mt-32 pt-16 border-t border-white/10"
+          className="mt-20 md:mt-32 pt-16 border-t border-white/10"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 divide-x-0 md:divide-x divide-white/10">
             {stats.map((stat, idx) => (
@@ -227,7 +227,7 @@ export default function TransformationsSection() {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>

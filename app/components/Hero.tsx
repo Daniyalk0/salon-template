@@ -55,7 +55,7 @@ export default function DarkHeroSection() {
           Mobile: Fades from Dark (Top) to Transparent (Bottom)
           Desktop: Fades from Dark (Left) to Transparent (Right)
         */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#050505]/60 to-transparent lg:bg-gradient-to-r lg:from-[#050505] lg:via-[#050505]/80 lg:to-black/0" />
+    <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-transparent via-50% to-[#050505]/90 lg:bg-gradient-to-r lg:from-[#050505] lg:via-[#050505]/80 lg:to-transparent" />
       </div>
 
       {/* Main Content Container */}
@@ -106,7 +106,7 @@ export default function DarkHeroSection() {
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98, y: 0 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
-              className="relative overflow-hidden inline-flex cursor-pointer items-center justify-center gap-2 px-8 py-4 bg-[#232323] hover:bg-black text-white rounded-xl font-medium transition-colors shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.2)] group"
+              className="relative overflow-hidden inline-flex cursor-pointer items-center justify-center gap-2 px-8 py-4 bg-[#2323239f] hover:bg-black text-white rounded-xl font-medium transition-colors shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgb(0,0,0,0.2)] group"
             >
               {/* Shine effect that sweeps across on hover */}
               <div className="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/10 to-transparent group-hover:translate-x-[150%] transition-transform duration-700 ease-in-out z-0" />

@@ -138,7 +138,7 @@ export default function LuxuryNavbar() {
               {isMobileMenuOpen ? (
                 <X className="w-6 h-6 text-stone-900" strokeWidth={1.5} />
               ) : (
-                <Menu className="w-6 h-6 text-stone-900" strokeWidth={1.5} />
+                <Menu className={`w-6 h-6 ${isScrolled ? "text-stone-900" : "text-stone-300"}`} strokeWidth={1.5} />
               )}
             </motion.div>
           </button>
