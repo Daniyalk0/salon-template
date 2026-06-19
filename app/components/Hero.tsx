@@ -43,7 +43,7 @@ export default function DarkHeroSection() {
       {/* Background Image & Faded Overlay */}
       <div className="absolute inset-0 w-full h-full z-0 md:ml-28">
         <Image
-          src="/heroImage4.jpg"
+          src="/heroImage3.jpg"
           alt="Luxury salon experience"
           fill
           priority
@@ -55,7 +55,11 @@ export default function DarkHeroSection() {
           Mobile: Fades from Dark (Top) to Transparent (Bottom)
           Desktop: Fades from Dark (Left) to Transparent (Right)
         */}
-    <div className="absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-transparent via-50% to-[#050505]/90 lg:bg-gradient-to-r lg:from-[#050505] lg:via-[#050505]/80 lg:to-transparent" />
+   {/* Mobile */}
+<div className="absolute inset-0 bg-gradient-to-b from-black via-black/40 via-60% to-black lg:hidden" />
+
+{/* Desktop */}
+<div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-[#050505] via-[#050505]/80 to-black/20" />
       </div>
 
       {/* Main Content Container */}
