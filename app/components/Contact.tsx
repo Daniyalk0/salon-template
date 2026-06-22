@@ -119,7 +119,7 @@ export default function LuxuryContact() {
                 <motion.a
                   key={idx}
                   href={detail.href}
-                  variants={itemVariants}
+                  // variants={itemVariants}
                   whileHover={{
                     y: -4,
                     backgroundColor: "rgba(255, 255, 255, 0.05)",
@@ -152,7 +152,7 @@ export default function LuxuryContact() {
               variants={itemVariants}
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="relative p-6 sm:p-8 bg-gradient-to-br from-white/[0.05] to-transparent border border-[#C8A97E]/30 rounded-3xl shadow-[0_0_40px_rgba(200,169,126,0.05)] overflow-hidden group"
+              className="relative p-6 sm:p-8 bg-gradient-to-br from-white/[0.05] to-transparent border border-[#C8A97E]/30 rounded-3xl backdrop-blur-mdz shadow-[0_0_40px_rgba(200,169,126,0.05)] overflow-hidden group"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#C8A97E]/10 rounded-full blur-3xl" />
               <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6">
