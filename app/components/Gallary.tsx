@@ -14,8 +14,8 @@ const transformations = [
     story: "A complete color correction and structural repair session. We safely lifted the client's hair over multiple hours, incorporating a custom bonding treatment to maintain hair integrity, finishing with a seamless blended balayage.",
     time: "4.5 Hours",
     stylist: "Elena V. (Master Colorist)",
-    beforeImg: "https://images.unsplash.com/photo-1554519880-ffe46861d570?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    afterImg: "https://images.unsplash.com/photo-1629397685944-7073f5589754?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    beforeImg: "/brunette.avif",
+    afterImg: "/blonde.avif",
     isHero: true,
   },
   {
@@ -27,8 +27,8 @@ const transformations = [
     stylist: "Sophia M. (Bridal Specialist)",
     // beforeImg: "https://images.unsplash.com/photo-15素... wait, let's use reliable URLs",
     // beforeImg: "https://images.unsplash.com/photo-15素95476108010-b4d1f10d5e43?q=80&w=1000&auto=format&fit=crop", // placeholder adaptation
-    beforeImg: "https://images.unsplash.com/photo-1542596594-649edbc13630?q=80&w=1000&auto=format&fit=crop",
-    afterImg: "https://images.unsplash.com/photo-1549236177-77e8271c34b6?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    beforeImg: "/bridalBefore.avif",
+    afterImg: "/bridalAfter.avif",
     isHero: false,
   },
   {
@@ -38,8 +38,8 @@ const transformations = [
     story: "Revived severely heat-damaged hair using our luxury keratin smoothing therapy and a precision blunt cut to remove split ends while preserving maximum length.",
     time: "3 Hours",
     stylist: "David K. (Texture Expert)",
-    beforeImg: "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1000&auto=format&fit=crop",
-    afterImg: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=1000&auto=format&fit=crop",
+    beforeImg: "/restoreBefore.avif",
+    afterImg: "/restoreAfter.avif",
     isHero: false,
   }
 ];

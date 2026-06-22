@@ -14,7 +14,7 @@ const SOCIAL_LINKS = [
 
 export default function LuxuryFooter() {
   return (
-    <footer className="relative bg-[#0A0A0A] pt-8 pb-2 min-[320px]:pb-[max(2rem,env(safe-area-inset-bottom))] overflow-hidden">
+    <footer className="relative bg-[#0A0A0A] pt-8 pb-2 overflow-hidden">
       
       {/* Subtle Gold Top Border Accent */}
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#C8A97E]/40 to-transparent" />
@@ -64,7 +64,7 @@ export default function LuxuryFooter() {
         </div>
 
         {/* BOTTOM: Copyright */}
-        <div className="mt-6 flex flex-col items-center justify-center pt-8 border-t border-white/[0.04]">
+        <div className="mt-3 md:mt-4 flex flex-col items-center justify-center pt-8 border-t border-white/[0.04]">
           <p className="text-[11px] sm:text-xs text-stone-500 font-light tracking-widest uppercase">
             &copy; {new Date().getFullYear()} Lumière Salon. All rights reserved.
           </p>

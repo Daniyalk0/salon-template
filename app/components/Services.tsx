@@ -12,7 +12,7 @@ const services = [
     title: "Hair Styling & Cuts",
     category: "Hair Care",
     description: "Precision cuts and bespoke styling tailored to enhance your natural features and personal aesthetic.",
-    image: "https://images.unsplash.com/photo-1560869713-7d0a29430803?q=80&w=2000&auto=format&fit=crop",
+    image: "/hairStyling.avif",
     classes: "md:col-span-2 lg:col-span-2 lg:row-span-2 h-[400px] lg:h-[624px]",
   },
   {
@@ -20,7 +20,7 @@ const services = [
     title: "Bridal Makeup",
     category: "Makeup",
     description: "Flawless, long-lasting artistry to make you glow on your most important day.",
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1000&auto=format&fit=crop",
+    image: "/BridalMakup.avif",
     classes: "col-span-1 h-[300px]",
   },
   {
@@ -28,7 +28,7 @@ const services = [
     title: "Luxury Facials",
     category: "Skin Care",
     description: "Rejuvenating, custom treatments designed for a radiant, youthful complexion.",
-    image: "https://images.unsplash.com/photo-1731514771613-991a02407132?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/facials.avif",
     classes: "col-span-1 h-[300px]",
   },
   {
@@ -36,7 +36,7 @@ const services = [
     title: "Coloring & Highlights",
     category: "Hair Care",
     description: "Expert color matching and advanced highlighting techniques for stunning dimension.",
-    image: "https://images.unsplash.com/photo-1554519515-242161756769?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/hairColoring.avif",
     classes: "col-span-1 h-[300px]",
   },
   {
@@ -44,7 +44,7 @@ const services = [
     title: "Nail Care & Manicure",
     category: "Nails",
     description: "Sophisticated nail artistry and deeply relaxing hand & foot therapies.",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1000&auto=format&fit=crop",
+    image: "/manicure.avif",
     classes: "col-span-1 h-[300px]",
   },
   {
@@ -52,7 +52,7 @@ const services = [
     title: "Hair Spa Treatments",
     category: "Wellness",
     description: "Deep conditioning therapies formulated to restore your hair's vitality and natural shine.",
-    image: "https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/hairSpa.avif",
     classes: "md:col-span-2 h-[300px]",
   },
   {
@@ -60,7 +60,7 @@ const services = [
     title: "Skin Care Clinic",
     category: "Skin Care",
     description: "Advanced clinical skin care therapies delivering lasting, visible results.",
-    image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=1000&auto=format&fit=crop",
+    image: "/skinCare.avif",
     classes: "col-span-1 h-[300px]",
   },
   {
@@ -68,7 +68,7 @@ const services = [
     title: "Expert Grooming",
     category: "Grooming",
     description: "Refined, classic grooming services designed for the modern individual.",
-    image: "https://images.unsplash.com/photo-1621605815971-fbc98d665033?q=80&w=1000&auto=format&fit=crop",
+    image: "/grooming.avif",
     classes: "col-span-1 h-[300px]",
   },
 ];

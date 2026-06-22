@@ -12,7 +12,7 @@ export default function Home() {
   return (
     //  <HeroSection/>
     <>
-      <LuxuryNavbar />
+      {/* <LuxuryNavbar /> */}
       <section id="home">
         <DarkHeroSection />
       </section>
@@ -30,7 +30,7 @@ export default function Home() {
 
       <LuxuryContact />
       </section>
-      <LuxuryFooter/>``
+      {/* <LuxuryFooter/>`` */}
     </>
   );
 }

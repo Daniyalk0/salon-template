@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LuxuryNavbar from "./components/Navbar";
+import LuxuryFooter from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,12 +24,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} bg-[#0A0A0A] h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+ return (
+    <html lang="en" className="bg-[#0A0A0A]">
+      <body className="bg-[#0A0A0A] text-stone-200 antialiased flex flex-col min-h-screen"> 
+        {/* 2. Add bg to body, and make it a flex column that spans the screen */}
+        
+        <LuxuryNavbar />
+        
+        {/* 3. Add flex-grow to main so it pushes the footer to the bottom! */}
+        <main className="flex-grow">
+          {children}
+        </main>
+        
+        <LuxuryFooter />
+      </body>
     </html>
   );
 }
