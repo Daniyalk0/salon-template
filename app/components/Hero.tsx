@@ -55,11 +55,11 @@ export default function DarkHeroSection() {
           Mobile: Fades from Dark (Top) to Transparent (Bottom)
           Desktop: Fades from Dark (Left) to Transparent (Right)
         */}
-   {/* Mobile */}
-<div className="absolute inset-0 bg-gradient-to-b from-black via-black/40 via-60% to-black lg:hidden" />
+        {/* Mobile */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-black/40 via-60% to-black lg:hidden" />
 
-{/* Desktop */}
-<div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-[#050505] via-[#050505]/80 to-black/20" />
+        {/* Desktop */}
+        <div className="absolute inset-0 hidden lg:block bg-gradient-to-r from-[#050505] via-[#050505]/80 to-black/20" />
       </div>
 
       {/* Main Content Container */}
@@ -100,13 +100,14 @@ export default function DarkHeroSection() {
           </motion.p>
 
           {/* Single CTA Button */}
-          <motion.a
-          href="https://wa.me/15551234567"
+          <motion.div
+            
             variants={itemVariants}
             className="flex flex-col sm:flex-row  gap-4 w-full sm:w-auto mb-10"
           >
             {/* Primary Button */}
-            <motion.button
+            <motion.a
+            href="https://wa.me/15551234567"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98, y: 0 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -118,11 +119,11 @@ export default function DarkHeroSection() {
               <Calendar className="w-5 h-5 relative z-10 transition-transform duration-300 group-hover:-rotate-12 group-hover:scale-110" />
               <span className="relative z-10">Book Appointment</span>
               <ArrowRight className="w-4 h-4 relative z-10 transition-transform duration-300 group-hover:translate-x-1.5" />
-            </motion.button>
+            </motion.a>
 
             {/* Secondary Button */}
             <motion.a
-            href="#services"
+              href="#services"
               whileHover={{ scale: 1.02, y: -2 }}
               whileTap={{ scale: 0.98, y: 0 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
@@ -134,7 +135,7 @@ export default function DarkHeroSection() {
               </span>
               {/* <ArrowRight className="w-4 h-4 relative z-10 transition-all duration-500 group-hover:text-black group-hover:translate-x-1 text-[#D4AF37]" /> */}
             </motion.a>
-          </motion.a>
+          </motion.div>
         </motion.div>
       </div>
 
