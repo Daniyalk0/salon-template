@@ -104,7 +104,7 @@ export default function LuxuryContact() {
         </motion.div>
 
         {/* MAIN SPLIT LAYOUT */}
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+     <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* LEFT SIDE: CONTACT INFO (60%) */}
           <motion.div
             initial="hidden"
@@ -119,12 +119,14 @@ export default function LuxuryContact() {
                 <motion.a
                   key={idx}
                   href={detail.href}
-                  // variants={itemVariants}
+                  variants={itemVariants}
                   whileHover={{
                     y: -4,
                     backgroundColor: "rgba(255, 255, 255, 0.05)",
                   }}
-                  className="flex items-start gap-4 p-6 bg-white/[0.02] border border-white/[0.06] rounded-2xl transition-colors duration-300 group"
+                  // GPU FIXES APPLIED HERE
+                  className="flex items-start gap-4 p-6 bg-white/[0.02] border border-white/[0.06] rounded-2xl transition-colors duration-300 group will-change-transform transform-gpu backface-hidden antialiased"
+                  style={{ WebkitFontSmoothing: "antialiased", WebkitBackfaceVisibility: "hidden" }}
                 >
                   <div className="w-12 h-12 rounded-full bg-[#C8A97E]/10 flex items-center justify-center flex-shrink-0 group-hover:bg-[#C8A97E]/20 transition-colors duration-300">
                     <detail.icon
@@ -152,7 +154,9 @@ export default function LuxuryContact() {
               variants={itemVariants}
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-              className="relative p-6 sm:p-8 bg-gradient-to-br from-white/[0.05] to-transparent border border-[#C8A97E]/30 rounded-3xl backdrop-blur-mdz shadow-[0_0_40px_rgba(200,169,126,0.05)] overflow-hidden group"
+              // GPU FIXES APPLIED HERE
+              className="relative p-6 sm:p-8 bg-gradient-to-br from-white/[0.05] to-transparent border border-[#C8A97E]/30 rounded-3xl backdrop-blur-md shadow-[0_0_40px_rgba(200,169,126,0.05)] overflow-hidden group will-change-transform transform-gpu backface-hidden antialiased"
+              style={{ transformStyle: "preserve-3d", WebkitBackfaceVisibility: "hidden" }}
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#C8A97E]/10 rounded-full blur-3xl" />
               <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6">
@@ -181,7 +185,7 @@ export default function LuxuryContact() {
                 href="tel:+15551234567"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#C8A97E] to-[#E3CBA8] text-stone-900 rounded-full font-medium tracking-wide shadow-[0_4px_20px_rgba(200,169,126,0.25)] hover:shadow-[0_8px_30px_rgba(200,169,126,0.4)] transition-shadow"
+                className="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#C8A97E] to-[#E3CBA8] text-stone-900 rounded-full font-medium tracking-wide shadow-[0_4px_20px_rgba(200,169,126,0.25)] hover:shadow-[0_8px_30px_rgba(200,169,126,0.4)] transition-shadow will-change-transform transform-gpu backface-hidden"
               >
                 <Phone className="w-4 h-4" />
                 Call Now
@@ -195,7 +199,7 @@ export default function LuxuryContact() {
                   backgroundColor: "rgba(255,255,255,0.08)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex items-center gap-2 px-8 py-4 bg-white/[0.03] border border-white/[0.1] text-white rounded-full font-medium tracking-wide hover:border-[#C8A97E]/50 transition-colors"
+                className="flex items-center gap-2 px-8 py-4 bg-white/[0.03] border border-white/[0.1] text-white rounded-full font-medium tracking-wide hover:border-[#C8A97E]/50 transition-colors will-change-transform transform-gpu backface-hidden"
               >
                 <MessageCircle className="w-4 h-4 text-[#C8A97E]" />
                 WhatsApp Us
@@ -209,7 +213,7 @@ export default function LuxuryContact() {
                   backgroundColor: "rgba(255,255,255,0.08)",
                 }}
                 whileTap={{ scale: 0.98 }}
-                className="flex items-center gap-2 px-8 py-4 bg-white/[0.03] border border-white/[0.1] text-white rounded-full font-medium tracking-wide hover:border-white/[0.2] transition-colors"
+                className="flex items-center gap-2 px-8 py-4 bg-white/[0.03] border border-white/[0.1] text-white rounded-full font-medium tracking-wide hover:border-white/[0.2] transition-colors will-change-transform transform-gpu backface-hidden"
               >
                 <MapPin className="w-4 h-4 text-stone-400" />
                 Get Directions
@@ -223,24 +227,20 @@ export default function LuxuryContact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5 flex flex-col h-full"
+            // GPU FIXES APPLIED HERE
+            className="lg:col-span-5 flex flex-col h-full will-change-transform transform-gpu backface-hidden"
+            style={{ WebkitBackfaceVisibility: "hidden" }}
           >
             <div className="flex flex-col p-2 bg-white/[0.02] border border-white/[0.06] rounded-[2rem] h-full shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
-              {/* Map Placeholder Wrapper */}
+              
               {/* Map Image Wrapper */}
               <div className="relative w-full h-[300px] md:h-[400px] lg:h-[450px] bg-stone-900 rounded-[1.5rem] overflow-hidden group">
-                {/* Replace this src with a real Google Maps screenshot of your salon */}
                 <img
                   src="/maps.jpeg"
                   alt="Salon Location Map"
                   className="absolute inset-0 w-full h-full object-cover opacity-60 transition-transform duration-700 group-hover:scale-105"
                 />
 
-                {/* 
-    Gradient Fade Overlays 
-    1. Top-to-bottom fade (blends into the dark card below)
-    2. Subtle edge vignettes (darkens the corners for a moody luxury feel)
-  */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/20 to-transparent z-10" />
                 <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_transparent_20%,_#0F0F0F_120%)] z-10" />
 
@@ -253,7 +253,9 @@ export default function LuxuryContact() {
                       repeat: Infinity,
                       ease: "easeInOut",
                     }}
-                    className="relative z-10 w-12 h-12 bg-gradient-to-br from-[#C8A97E] to-[#E3CBA8] rounded-full flex items-center justify-center shadow-[0_8px_20px_rgba(200,169,126,0.4)] cursor-pointer"
+                    // GPU FIXES APPLIED HERE
+                    className="relative z-10 w-12 h-12 bg-gradient-to-br from-[#C8A97E] to-[#E3CBA8] rounded-full flex items-center justify-center shadow-[0_8px_20px_rgba(200,169,126,0.4)] cursor-pointer will-change-transform transform-gpu backface-hidden"
+                    style={{ transformStyle: "preserve-3d", WebkitBackfaceVisibility: "hidden" }}
                   >
                     <MapPin className="w-6 h-6 text-stone-900 fill-stone-900" />
                   </motion.div>
