@@ -20,7 +20,7 @@ const services = [
     title: "Bridal Makeup",
     category: "Makeup",
     description: "Flawless, long-lasting artistry to make you glow on your most important day.",
-    image: "/BridalMakup.avif",
+    image: "/bridalMakup.avif",
     classes: "col-span-1 h-[300px]",
   },
   {
